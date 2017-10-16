@@ -1,0 +1,5 @@
+.DS_STORE
+*.swo
+*.swp
+data/resume.yml
+build

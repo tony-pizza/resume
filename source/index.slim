@@ -1,0 +1,77 @@
+doctype html
+html
+
+  head
+    title resume-#{Time.now.to_i}
+    link href="style.css" rel="stylesheet"
+
+  body
+
+    header
+      div
+        h1 = data.resume.name
+        h2 Software Developer
+      p
+        = data.resume.location
+        br
+        = data.resume.phone
+        br
+        = data.resume.email
+      p
+        = data.resume.website
+        br
+        | github: #{data.resume.github}
+        br
+        | linkedin: #{data.resume.linkedin}
+
+    section
+      h1 Work Experience
+
+      section
+        - data.resume.work.each do |position|
+          section
+            h1 = position.company
+            /p #{position.location} &bull; <em>#{position.title}</em>, #{position.duration}
+            p <em>#{position.title}</em>, #{position.duration} &bull; #{position.location}
+            /p = position.location
+            /p <em>#{position.title}</em>, #{position.duration}
+            p = position.description
+
+    section
+      h1 Education
+
+      section
+        - data.resume.education.each do |edu|
+          section
+            h1 = edu.school
+            p = edu.location
+            p #{edu.degree}, #{edu.focus}, #{edu.year}
+
+    section
+      h1 Publications
+
+      section
+        - data.resume.publications.each do |pub|
+          section
+            h1 &ldquo;#{pub.title}&rdquo;
+            p with #{pub.authors}. <em>#{pub.publisher}</em>, #{pub.date}
+
+    section
+      h1 Projects
+
+      section
+        - data.resume.projects.each do |project|
+          section
+            h1 = project.title
+            p #{project.collaborators ? "with " + project.collaborators : "Independent project"}, #{project.date}
+            p = project.description
+
+    section
+      h1 Volunteer Experience
+
+      section
+        - data.resume.volunteering.each do |v|
+          section
+            h1 = v.organization
+            p <em>#{v.title}</em>, #{v.date} &bull; #{v.location}
+            p = v.description

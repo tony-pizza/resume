@@ -1,0 +1,52 @@
+name: Jube Shprangler
+
+location: Cape Ricky, DE
+phone: +1 (555) 555 5555
+email: jubeguy91@live.com
+
+website: dongles.net
+github: jubeguy91
+linkedin: jubeguy91
+
+work:
+  -
+    company: Dongles.net
+    title: Founder, CEO
+    location: Cape Ricky, DE
+    duration: 2009-Present
+    description: "Founded the <em>best</em> dongle rating and review site on the Web."
+  -
+    company: Johnny Cabo's
+    title: Busboy
+    location: Devon, PA
+    duration: January 2005-Present
+    description: "Bus tables at local Tex-Mex restaurant."
+
+education:
+  -
+    school: Institute of Facts
+    location: Online
+    year: 2011
+    degree: Associates Degree
+    focus: Dongle Technology
+
+publications:
+  -
+    title: "What's the best dongle?"
+    publisher: The Dongle Gazette
+    date: March 3rd, 2012
+    authors: Goob Wang
+
+projects:
+  -
+    title: DongleConf
+    date: 2015-Present
+    description: "A yearly conference bringing together the dongle community. Past keynote speakers include Gary Cello, JJ Gobler and Tiffany Columnhouse-Guntherton."
+
+volunteering:
+  -
+    organization: Dongles 2 the Kidz
+    location: Cape Todd, DE
+    title: Dongle Youth Mentor
+    date: 2015
+    description: "Taught middle schoolers the facts I know about dongles and what the best dongles are."
