@@ -2,6 +2,8 @@
 
 use [middleman](https://middlemanapp.com/), CSS and a [slim template](http://slim-lang.com/) to render a static webpage and then save it to a pdf from chrome
 
+[see an example!](example.pdf)
+
 ### install
 
 copy `data/resume.yml.example` to `data/resume.yml`
